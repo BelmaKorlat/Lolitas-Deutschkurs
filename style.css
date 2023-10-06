@@ -1,0 +1,549 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #F2BED1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(89, 87, 88);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(89, 87, 88);
+}
+
+body {
+    background-color: #F9F5F6;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(89, 87, 88);
+    color: #F9F5F6;
+}
+
+header h1 {
+    letter-spacing: 5px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    align-items: center;
+}
+
+header li {
+    list-style: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+header li a {
+    text-transform: uppercase;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-image: linear-gradient(to right,
+            #FDCEDF,
+            #F2BED1 50%,
+            white 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+header li a::before {
+    content: '';
+    background: #F2BED1;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+header li a:hover {
+    background-position: 0;
+    cursor: pointer;
+}
+
+header li a:hover::before {
+    width: 100%;
+}
+
+#kontejner {
+    margin-top: 50px;
+    height: 500px;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: url(slika1.jpeg);
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#strelice {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#lijevo {
+    padding: 14px;
+    color: #F9F5F6;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+
+#desno {
+    padding: 14px;
+    color: #F9F5F6;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+
+#lijevo:hover {
+    background-color: #F8E8EE;
+    color: black;
+}
+
+#desno:hover {
+    background-color: #F8E8EE;
+    color: black;
+}
+
+.dno {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 900px;
+    background-color: rgb(89, 87, 88);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dno span {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid rgb(245, 223, 228);
+    cursor: pointer;
+    user-select: none;
+}
+
+#prvi {
+    position: absolute;
+    top: 0;
+    margin: 15px;
+    font-size: 15px;
+    padding: 8px 12px;
+    color: rgb(89, 87, 88);
+    font-weight: bold;
+    user-select: none;
+}
+
+.homeText {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.homeText h3 {
+    text-align: center;
+}
+
+.mainBoxContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.info h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.info {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.infoText {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.infoText li {
+    list-style: none;
+}
+
+
+.basicInfo {
+    width: 50%;
+    margin-right: 5%;
+    border-radius: 2%;
+    background-color: #F8E8EE;
+    padding: 20px;
+}
+
+.grupniKurs {
+    width: 50%;
+    margin-right: 5%;
+    border-radius: 2%;
+    background-color: #F8E8EE;
+    padding: 20px;
+}
+
+.grupniKurs button {
+    background-color: rgb(89, 87, 88);
+    border: none;
+    color: #F8E8EE;
+    padding: 10px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 40px 2px;
+    opacity: 1;
+    transition: 0.3s;
+    font-weight: bold;
+    margin-left: 35%;
+}
+
+.grupniKurs button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.grupniKurs button a {
+    text-decoration: none;
+    color: #F8E8EE;
+}
+
+.cijenePojedinacno {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.listaCijene {
+    height: 200px;
+    width: 20%;
+    background-color: rgb(89, 87, 88);
+    color: white;
+    text-align: center;
+}
+
+.listaCijene h2 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cijena {
+    margin-bottom: 10px;
+}
+
+.cijeneText {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.btnKontakt {
+    background-color: #F8E8EE;
+    border: none;
+    color: rgb(89, 87, 88);
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btnKontakt:hover {
+    cursor: pointer;
+    opacity: 0.6
+}
+
+.btnKontakt a {
+    text-decoration: none;
+    color: rgb(89, 87, 88);
+}
+
+.formPrijava {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.dioForme {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.dioForme input {
+    padding: 10px;
+}
+
+.dioForme label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.fname {
+    width: 100%;
+}
+
+.lname {
+    width: 100%;
+}
+
+.emailText {
+    width: 100%;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+}
+
+.form-control:hover {
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+.formBtn button {
+    background-color: rgb(89, 87, 88);
+    border: none;
+    color: #F8E8EE;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 1rem;
+    opacity: 1;
+    transition: 0.3s;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.formBtn button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: rgb(89, 87, 88);
+}
+
+.ikone {
+    display: flex;
+    justify-content: center;
+}
+
+.ikone li {
+    list-style: none;
+}
+
+.ikone li a {
+    background-color: #F8E8EE;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #F2BED1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    transition: all 500ms ease;
+}
+
+.ikone li a svg {
+    color: rgb(89, 87, 88);
+    border: none;
+}
+
+.ikone li a:hover {
+    box-shadow: 0 0 20px #F2BED1;
+}
+
+@media screen and (max-width:1400px) {
+    .info {
+        width: 95%;
+    }
+
+    .basicInfo {
+        margin-right: 20px;
+    }
+
+    .grupniKurs {
+        margin-right: 0;
+    }
+
+    .cijenePojedinacno {
+        flex-wrap: wrap;
+        width: 95%;
+    }
+
+    .listaCijene {
+        width: 45%;
+        margin-right: 5px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        flex-direction: column;
+    }
+
+    header h1 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    header ul {
+        width: 100%;
+    }
+
+    #kontejner {
+        width: 95%;
+    }
+
+    .dno {
+        width: 95%;
+    }
+
+    .homeText {
+        width: 95%;
+    }
+
+    .infoText {
+        flex-direction: column;
+    }
+
+    .basicInfo {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .grupniKurs {
+        width: 100%;
+        text-align: center;
+    }
+
+    .grupniKurs button {
+        margin-left: 0;
+    }
+
+    .cijenePojedinacno {
+        flex-wrap: wrap;
+    }
+
+    .listaCijene {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .formPrijava {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .dioForme {
+        width: 95%;
+    }
+
+    .formBtn button {
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+
+    header ul {
+        width: 100%;
+    }
+
+    header li {
+        font-size: 1.2rem;
+    }
+}
