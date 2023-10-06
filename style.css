@@ -233,15 +233,14 @@ header li a:hover::before {
 .basicInfo {
     width: 50%;
     margin-right: 5%;
-    border-radius: 2%;
+    border-radius: 15px;
     background-color: #F8E8EE;
     padding: 20px;
 }
 
 .grupniKurs {
     width: 50%;
-    margin-right: 5%;
-    border-radius: 2%;
+    border-radius: 15px;
     background-color: #F8E8EE;
     padding: 20px;
 }
@@ -258,6 +257,7 @@ header li a:hover::before {
     transition: 0.3s;
     font-weight: bold;
     margin-left: 35%;
+    border-radius: 15px;
 }
 
 .grupniKurs button:hover {
@@ -282,7 +282,7 @@ header li a:hover::before {
 .listaCijene {
     height: 200px;
     width: 20%;
-    background-color: rgb(89, 87, 88);
+    background-color: rgb(116, 113, 113);
     color: white;
     text-align: center;
 }
@@ -312,6 +312,7 @@ header li a:hover::before {
     opacity: 1;
     transition: 0.3s;
     font-weight: bold;
+    border-radius: 15px;
 }
 
 .btnKontakt:hover {
@@ -393,6 +394,7 @@ textarea {
     transition: 0.3s;
     font-weight: bold;
     text-transform: uppercase;
+    border-radius: 15px;
 }
 
 .formBtn button:hover {
