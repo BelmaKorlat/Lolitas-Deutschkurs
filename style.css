@@ -175,17 +175,6 @@ header li a:hover::before {
     user-select: none;
 }
 
-#prvi {
-    position: absolute;
-    top: 0;
-    margin: 15px;
-    font-size: 15px;
-    padding: 8px 12px;
-    color: rgb(89, 87, 88);
-    font-weight: bold;
-    user-select: none;
-}
-
 .homeText {
     width: 900px;
     margin-left: auto;

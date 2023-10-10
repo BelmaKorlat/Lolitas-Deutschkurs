@@ -1,9 +1,7 @@
 let kontej = document.getElementById("kontejner");
-let span = document.getElementById("prvi");
 
 function klik1() {
     kontej.style.backgroundImage = "url(slika1.jpeg)";
-    span.innerHTML = "1 / 3";
     document.getElementById("dugme1").style.backgroundColor = "rgb(244, 243, 238)";
     document.getElementById("dugme2").style.backgroundColor = "rgb(89, 87, 88)";
     document.getElementById("dugme3").style.backgroundColor = "rgb(89, 87, 88)";
@@ -11,7 +9,6 @@ function klik1() {
 
 function klik2() {
     kontej.style.backgroundImage = "url(slika2.jpeg)";
-    span.innerHTML = "2 / 3";
     document.getElementById("dugme1").style.backgroundColor = "rgb(89, 87, 88)";
     document.getElementById("dugme2").style.backgroundColor = "rgb(244, 243, 238)";
     document.getElementById("dugme3").style.backgroundColor = "rgb(89, 87, 88)";
@@ -19,7 +16,6 @@ function klik2() {
 
 function klik3() {
     kontej.style.backgroundImage = "url(slika3.jpeg)";
-    span.innerHTML = "3 / 3";
     document.getElementById("dugme1").style.backgroundColor = "rgb(89, 87, 88)";
     document.getElementById("dugme2").style.backgroundColor = "rgb(89, 87, 88)";
     document.getElementById("dugme3").style.backgroundColor = "rgb(244, 243, 238)";
